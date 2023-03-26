@@ -6,7 +6,7 @@ Google Play Store team is about to lunch a new feature where in certain apps tha
 
 ## Task
 
-1. Data clean up – Missing value treatment
+1.Data clean up – Missing value treatment
 
 a. Drop records where rating is missing since rating is our target/study variable
 
@@ -63,3 +63,68 @@ c. Installs
 i. What is the 95th percentile of the installs?
 
 ii. Drop records having a value more than the 95th percentile
+
+
+## Data analysis to answer business questions
+
+5. What is the distribution of ratings like? (use Seaborn) More skewed towards higher lower values? 
+
+a. How do you explain this?
+
+b. What is the implication of this on your analysis?
+
+6. What are the top Content Rating values?
+
+a. Are there any values with very few records?
+
+b. If yes, drop those as they won’t help in the analysis
+
+7. Effect of size on rating
+
+a. Make a joinplot to understand the effect of size on rating
+
+b. Do you see any patterns?
+
+c. How do you explain the pattern?
+
+8. Effect of price on rating
+
+a. Make a jointplot (with regression line)
+
+b. What pattern do you see?
+
+c. How do you explain the pattern?
+
+d. Replot the data, this time with only records with price > 0
+
+e. Does the pattern change?
+
+f. What is your overall inference on the effect of price on the rating
+
+9. Look at all the numeric interactions together –
+
+a. Make a pairplort with the colulmns - 'Reviews', 'Size', 'Rating', 'Price'
+
+10. Rating vs. content rating
+
+a. Make a bar plot displaying the rating for each content rating
+
+b. Which metric would you use? Mean? Median? Some other quantile?
+
+c. Choose the right metric and plot
+
+11. Content rating vs. size vs. rating – 3 variables at a time
+
+a. Create 5 buckets (20% records in each) based on Size
+
+b. By Content Rating vs. Size buckets, get the rating (20th percentile) for each combination
+
+c. Make a heatmap of this
+
+i. Annotated
+
+ii. Greens color map
+
+d. What’s your inference? Are lighter apps preferred in all categories? Heavier? Some?
+
+## 
